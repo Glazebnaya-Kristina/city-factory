@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>СитиФабрика</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/logo.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/constructor.css">
+</head>
+
+<body>
+
+    <!-- build:section layout.searchMobPopup-->
+    <!-- /build -->
+    <!-- build:section layout.mobCatalogPopup-->
+    <!-- /build -->
+    <!-- build:section layout.basketPopup-->
+    <!-- /build -->
+    <!-- build:section layout.registrationPopup-->
+    <!-- /build -->
+
+
+    <!-- build:section layout.header-->
+    <!-- /build -->
+
+    <section class="main">
+        <div class="container">
+            <div class="calculatorWrap">
+                <div class="leftBlk">
+                    <!-- выбор изделия только на мобильном -->
+                    <div class="chooseProduct">
+                        <div class="topLine">
+                            <span class="current-value">
+                                Выбор изделия
+                            </span>
+                        </div>
+                        <ul class="productList">
+                            <li>
+                                <a href="javascript:void(0)">портплед</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">чехол для мяча</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">подушка</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">чехол на чемодан</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">чехол для скакалки</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">плед</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">рюкзак-мешок</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">косметичка</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">чехол для булав</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="product__gallery-bigImg mobile">
+                        <img class="main-photo" src="../img/calculator-img.jpg" alt="photo">
+                    </div>
+                    <!--  -->
+                    <div class="product__gallery-preview">
+                        <h3>Вид</h3>
+                        <div class="flex-wrap">
+                            <div class="small-image active">
+                                <div class="imgWrap">
+                                    <img class="small-image-photo" src="../img/calculator-img.jpg" alt="photo">
+                                </div>
+                                <span>Спереди</span>
+                            </div>
+                            <div class="small-image">
+                                <div class="imgWrap">
+                                    <img class="small-image-photo" src="../img/home/girl2.jpg" alt="photo">
+                                </div>
+                                <span>Сзади</span>
+                            </div>
+                            <div class="small-image">
+                                <div class="imgWrap">
+                                    <img class="small-image-photo" src="../img/home/girl3.jpg" alt="photo">
+                                </div>
+                                <span>Слева</span>
+                            </div>
+                            <div class="small-image">
+                                <div class="imgWrap">
+                                    <img class="small-image-photo" src="../img/home/girl4.jpg" alt="photo">
+                                </div>
+                                <span>Справа</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filters">
+                        <div class="filters-item">
+                            <h3>Масштаб</h3>
+                            <div class="filters-body">
+                                <input type="range" class="zoomRange range-input" id="my-range" step="0.1" min="0"
+                                    max="4" />
+                            </div>
+                        </div>
+                        <div class="filters-item">
+                            <h3>Цвет</h3>
+                            <div class="filters-body">
+                                <ul class="colorBlk">
+                                    <li class="active">
+                                        <a href="javascript:void(0)" style="background-color: #e2f5fd"></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" style="background-color: #fcd1d6"></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" style="background-color: #feeef5"></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" style="background-color: #bdb1d4"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="filters-item">
+                            <h3>Размер</h3>
+                            <div class="filters-body">
+                                <ul class="sizeBlk">
+                                    <li class="active">
+                                        <a href="javascript:void(0)">XS</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">S</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">M</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">L</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">XL</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">XXL</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="filters-item">
+                            <h3>Добавить элемент</h3>
+                            <div class="filters-body">
+                                <ul class="uploadImg">
+                                    <li>
+                                        <span>Картинку</span>
+                                        <label>
+                                            <i class="icon-attachment add-image"></i>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <span>Фигуру</span>
+                                        <label>
+                                            <i class="icon-attachment add-figure"></i>
+                                        </label>
+                                        <div class="choose-figure">
+                                            <img src="../img/diamond.png">
+                                            <img src="../img/stretching-exercises.png">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>Текст</span>
+                                        <label>
+                                            <input type="text" class='text' placeholder="введите текст">
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightBlk">
+                    <!-- выбор изделия только на десктопе -->
+                    <ul class="chooseItem">
+                        <li class="active">
+                            <a href="javascript:void(0)">портплед</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">чехол для мяча</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">подушка</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">чехол на чемодан</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">чехол для скакалки</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">плед</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">рюкзак-мешок</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">косметичка</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">чехол для булав</a>
+                        </li>
+                    </ul>
+                    <div class="product__gallery-bigImg desk" id='gallery-bigImg'>
+                        <div class="canvas-container" id='add-canvas' style="position: absolute;
+                            transform: translate(-50%,-50%);
+                            top: 50%;
+                            left: 50%;z-index: 99;">
+                            <div id="resizable">
+                                <div class="files" id="files">
+                                    <div class="file-loading">
+                                        <input id="file-1" type="file" name="file-1[]">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-view">
+                                <span class="close">x</span>
+                                <span id='el' class="view resize"></span>
+                            </div>
+                            <div class="figure"></div>
+
+                        </div>
+                        <div class="main-photo">
+                            <img class="main-photo" src="../img/calculator-img.jpg" alt="photo">
+                        </div>
+                    </div>
+                    <div class="image" id="image">
+                        <span class="remove">x</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="bottomLine">
+                <div class="block">
+                    <div class="btn-wrap">
+                        <a href="javascript:void(0)" class="btn save">Сохранить созданный шаблон</a>
+                    </div>
+                    <div class="quantity">
+                        <h3>Количество</h3>
+                        <input type="number" min="100" placeholder="(от 100 штук)">
+                    </div>
+                    <div class="btn-wrap">
+                        <a href="javascript:void(0)" class="btn">Рассчитать стоимость</a>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="cost-blk">
+                        <h4>Стоимость:</h4>
+                        <span>2 500 RUB</span>
+                    </div>
+                    <div class="btn-wrap">
+                        <a href="javascript:void(0)" class="btn">Добавить в корзину</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+    <!-- build:section layout.footer-->
+    <!-- /build -->
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.panzoom.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/jquery.ui.touch-punch.min.js"></script>
+    <script src="../js/script.min.js"></script>
+    <script src="../js/jquery.mousewheel.js"></script>
+    <script src="../js/fileinput.min.js"></script>
+    <script src="../js/fabric.min.js"></script>
+    <script src="../js/html2canvas.js"></script>
+    <script src="../js/customiseControls.min.js"></script>
+
+    <script src="../js/constructor.min.js"></script>
+    <script>
+        $("#my-range").on("change", function () {
+            $(".main-photo").css({ "zoom": $(this).val() });
+            $(".main-photo").draggable();
+        });
+
+        $('.close').on('click', function () {
+            $(this).parents().removeClass('active')
+        })
+
+        $('.figure .close').on('click', function () {
+            $('.figure.active').removeClass('active')
+        })
+
+        $('#resizable .close span').on('click', function () {
+            $('#resizable.active').removeClass('active')
+        })
+        $('.remove').on('click', function () {
+            $("#image").empty()
+        })
+        $('.save').on('click', function () {
+            $('#resizable').removeClass('active-arrow')
+            $('.container-view').removeClass('active-arrow')
+            $(".figure").removeClass('active-arrow')
+            $('.remove').addClass('active')
+
+            html2canvas([document.getElementById('add-canvas')], {
+                onrendered: function (canvas) {
+                    document.getElementById('image').appendChild(canvas);
+                    var data = canvas.toDataURL('image/png');
+                }
+                // AJAX call to send `data` to a PHP file that creates an image from the dataURI string and saves it to a directory on the server
+            });
+            html2canvas([document.getElementById('gallery-bigImg')], {
+                onrendered: function (canvas) {
+                    document.getElementById('image').appendChild(canvas);
+                    var data = canvas.toDataURL('image/png');
+                }
+            });
+        })
+
+        $('.add-figure').on('click', function () {
+            $('.choose-figure').addClass('active')
+        })
+        $(".figure").empty().resizable({ disable: true });
+        $('.choose-figure img').on('click', function () {
+            $(".figure").addClass('active').addClass('active-arrow').append("<span class='close'>x</span")
+            $(".figure img").addClass('not-active').removeClass('active')
+            $('.figure .close').on('click', function () {
+                $('.figure.active').removeClass('active')
+            })
+            $(this).clone().prependTo(".figure").addClass('active').removeClass('not-active').parents(".figure").resizable({ enable: true }).draggable();
+        })
+
+        $(".text").on('click', function () {
+            $('.container-view').addClass('active').addClass('active-arrow')
+        })
+
+        $(".main .product__gallery-bigImg img").on('click', function () {
+            $('#resizable').removeClass('active-arrow')
+            $('.container-view').removeClass('active-arrow')
+            $(".figure").removeClass('active-arrow')
+        })
+        $("#resizable").on('click', function () {
+            $(this).addClass('active-arrow')
+        })
+        $(".container-view").on('click', function () {
+            $(this).addClass('active-arrow')
+        })
+        $(".figure").on('click', function () {
+            $(this).addClass('active-arrow')
+        })
+
+        $(document).ready(function () { $(".text").keyup(function () { $('.view').text($(".text").val()); }); });
+
+        $('.uploadImg .add-image').on('click', function () {
+            $('#file-1').trigger('click');
+            $('#resizable').addClass('active')
+            $("#file-1").fileinput({
+                uploadUrl: "/ file-upload-batch / 1",
+
+            });
+        })
+
+        $(function () {
+            $("#resizable").resizable({});
+            $("#resizable").draggable();
+        });
+
+        $(function () {
+            $(".container-view").resizable({});
+            $(".container-view").draggable();
+        });
+
+        $(document).ready(function () {
+            resize();
+        });
+
+        var rtime;
+        var timeout = false;
+        var delta = 100;
+        $(window).resize(function () {
+            rtime = new Date();
+            if (timeout === false) {
+                timeout = true;
+                setTimeout(resizeend, delta);
+            }
+        });
+
+        function resizeend() {
+            if (new Date() - rtime < delta) {
+                setTimeout(resizeend, delta);
+            } else {
+                timeout = false;
+                resize();
+                // console.log('Done resizing');
+            }
+        }
+
+        function resize() {
+            $('.resize').each(function (i, obj) {
+                $(this).css('font-size', '4em');
+
+                while ($(this).width() > $(this).parent().width()) {
+                    $(this).css('font-size', (parseInt($(this).css('font-size')) - 1) + "px");
+                }
+            });
+        }
+
+    </script>
+</body>
+
+</html>

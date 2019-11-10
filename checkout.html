@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>СитиФабрика</title>
+  <meta name="cmsmagazine" content="5a7189a28fb3dc68238dbdb44c9ea99c"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/logo.png">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/checkout.css">
+</head>
+
+<body>
+
+<!-- build:section layout.searchMobPopup-->
+<!-- /build -->
+<!-- build:section layout.mobCatalogPopup-->
+<!-- /build -->
+<!-- build:section layout.basketPopup-->
+<!-- /build -->
+<!-- build:section layout.registrationPopup-->
+<!-- /build -->
+
+
+<!-- build:section layout.header-->
+<!-- /build -->
+<div class="container container--big">
+  <ul class="nav-link nav-link--special">
+    <li><a href="index.html">Главная</a></li>
+    <li><span> / </span></li>
+    <li><a href="#">Каталог</a></li>
+    <li><span> / </span></li>
+    <li><a href="blog.html">Название товара</a></li>
+    <li><span> / </span></li>
+    <li><a href=basket.html">Корзина</a></li>
+    <li><span> / </span></li>
+    <li><span class="active-link">Оформление заказа</span></li>
+  </ul>
+</div>
+
+<section class="checkout">
+  <div class="container container--big">
+    <h1 class="checkout__title title-line  title-line--top">Оформление <br> заказа</h1>
+    <form class="form checkout__form">
+      <div class="checkout__options">
+        <fieldset class="form__fieldset checkout__fieldset">
+          <legend class="form__legend checkout__option-title">Личные данные</legend>
+          <p class="form__group checkout__group">
+            <label class="label label--column checkout__label">
+              <span class="label__name checkout__name">Имя*</span>
+              <input class="input checkout__input" type="text" placeholder="Введите данные" required>
+            </label>
+            <label class="label label--column checkout__label">
+              <span class="label__name checkout__name">Фамилия*</span>
+              <input class="input checkout__input" type="text" placeholder="Введите данные" required>
+            </label>
+            <label class="label label--column checkout__label">
+              <span class="label__name checkout__name">Отчество*</span>
+              <input class="input checkout__input" type="text" placeholder="Введите данные" required>
+            </label>
+            <label class="label label--column checkout__label">
+              <span class="label__name checkout__name">Email*</span>
+              <input class="input checkout__input" type="email" placeholder="Введите данные" required>
+            </label>
+            <label class="label label--column checkout__label">
+              <span class="label__name checkout__name">Телефон*</span>
+              <input class="input checkout__input" type="number" placeholder="Введите данные" required>
+            </label>
+            <label class="label label--row checkout__checkbox-wrapper">
+                <input class="checkbox" type="checkbox" required checked>
+              <span class="checkout__checkbox-text">Мною прочитаны и я даю согласие с документом <a href="/" class="form__link">Политика безопасности</a></span>
+            </label>
+          </p>
+        </fieldset>
+
+        <fieldset class="form__fieldset checkout__fieldset">
+          <legend class="form__legend checkout__option-title">Доставка</legend>
+          <p class="form__group checkout__group">
+            <label class="label label--column checkout__label">
+              <span class="label__name checkout__name">Метод  доставки*</span>
+              <span class="checkout__select-wrapper select-wrapper">
+                <select class="select checkout__input" required>
+                <option value="" style="display:none">Выберите</option>
+                <option value="value1">Москва</option>
+                <option value="value2">Москва</option>
+                <option value="value3">Москва</option>
+              </select>
+              </span>
+            </label>
+            <label class="label label--column checkout__label">
+              <span class="label__name checkout__name">Страна</span>
+              <span class="checkout__select-wrapper select-wrapper">
+                <select class="select checkout__input" required>
+                <option value="" style="display:none">Выберите</option>
+                <option value="value1">Москва</option>
+                <option value="value2">Москва</option>
+                <option value="value3">Москва</option>
+              </select>
+            </label>
+            <label class="label label--column checkout__label">
+              <span class="label__name checkout__name">Регион/область</span>
+              <span class="checkout__select-wrapper select-wrapper">
+                <select class="select checkout__input" required>
+                <option value="" style="display:none">Выберите</option>
+                <option value="value1">Москва</option>
+                <option value="value2">Москва</option>
+                <option value="value3">Москва</option>
+              </select>
+            </label>
+            <label class="label label--column checkout__label">
+              <span class="label__name checkout__name">Город</span>
+              <input class="input checkout__input" type="text" placeholder="Введите данные">
+            </label>
+            <label class="label label--column checkout__label">
+              <span class="label__name checkout__name">Индекс</span>
+              <input class="input checkout__input" type="number" placeholder="Введите данные">
+            </label>
+            <label class="label label--column checkout__label">
+              <span class="label__name checkout__name">Адрес</span>
+              <input class="input checkout__input" type="text" placeholder="Введите данные">
+            </label>
+            <label class="label label--row checkout__checkbox-wrapper">
+              <input class="checkbox" type="checkbox" required>
+              <span class="checkout__checkbox-text">Мой адрес совпадает с адресом платежа</span>
+            </label>
+          </p>
+        </fieldset>
+
+        <fieldset class="form__fieldset checkout__fieldset">
+          <legend class="form__legend checkout__option-title">Оплата</legend>
+          <p class="form__group checkout__group">
+            <label class="label label--column checkout__label">
+              <span class="label__name checkout__name">Метод  оплаты*</span>
+              <span class="checkout__select-wrapper select-wrapper">
+                <select class="select checkout__input" required>
+                <option value="" style="display:none">Выберите</option>
+                <option value="value1">Москва</option>
+                <option value="value2">Москва</option>
+                <option value="value3">Москва</option>
+              </select>
+            </label>
+          </p>
+        </fieldset>
+      </div>
+
+      <div class="checkout__footer">
+        <div class="checkout__goods section-basket">
+
+
+          <ul class="list jcf-scrollable">
+            <li class="list_item">
+              <div class="item_left">
+                <span>Артикул P-19195/00/50</span>
+                <p class="item_img" style="background-image: url('../img/home/girl2.jpg');"></p>
+                <p class="number">
+                  <span class="minus">-</span>
+                  <input type="text" class="only_number" pattern="^[ 0-9]+$" value="1"
+                         size="1"/>
+                  <span class="plus">+</span>
+                </p>
+              </div>
+              <div class="item_right">
+                <div class="heading">
+                  <h3>Описание</h3>
+                  <h4>Название товара,
+                    состоящее
+                    из множества слов</h4>
+                  <span class="subtitle">Артикул P-19195/00/50</span>
+                </div>
+                <div class="item_description">
+                  <div class="size">
+                    <span>Размер</span>
+                    <span>L</span>
+                  </div>
+                  <div class="color">
+                    <span>Цвет</span>
+                    <span></span>
+                  </div>
+                </div>
+                <div class="number">
+                  <p>К-во</p>
+                  <span class="minus">-</span>
+                  <input type="text" class="only_number" pattern="^[ 0-9]+$" value="1"
+                         size="1"/>
+                  <span class="plus">+</span>
+                </div>
+                <div class="price">
+                  <span>Стоимость</span>
+                  <span>2 500 RUB</span>
+                </div>
+              </div>
+            </li>
+            <li class="list_item">
+              <div class="item_left">
+                <span>Артикул P-19195/00/50</span>
+                <div class="item_img" style="background-image: url('../img/home/girl4.jpg');"></div>
+                <div class="number">
+                  <span class="minus">-</span>
+                  <input type="text" class="only_number" pattern="^[ 0-9]+$" value="1"
+                         size="1"/>
+                  <span class="plus">+</span>
+                </div>
+              </div>
+              <div class="item_right">
+                <div class="heading">
+                  <h3>Описание</h3>
+                  <h4>Название товара,
+                    состоящее
+                    из множества слов</h4>
+                  <span class="subtitle">Артикул P-19195/00/50</span>
+                </div>
+                <div class="item_description">
+                  <div class="size">
+                    <span>Размер</span>
+                    <span>L</span>
+                  </div>
+                  <div class="color">
+                    <span>Цвет</span>
+                    <span style="background-color: #18131a;"></span>
+                  </div>
+                </div>
+                <div class="number">
+                  <p>К-во</p>
+                  <span class="minus">-</span>
+                  <input type="text" class="only_number" pattern="^[ 0-9]+$" value="1"
+                         size="1"/>
+                  <span class="plus">+</span>
+                </div>
+                <div class="price">
+                  <span>Стоимость</span>
+                  <span>2 500 RUB</span>
+                </div>
+              </div>
+            </li>
+            <li class="list_item">
+              <div class="item_left">
+                <span>Артикул P-19195/00/50</span>
+                <p class="item_img" style="background-image: url('../img/home/girl2.jpg');"></p>
+                <p class="number">
+                  <span class="minus">-</span>
+                  <input type="text" class="only_number" pattern="^[ 0-9]+$" value="1"
+                         size="1"/>
+                  <span class="plus">+</span>
+                </p>
+              </div>
+              <div class="item_right">
+                <div class="heading">
+                  <h3>Описание</h3>
+                  <h4>Название товара,
+                    состоящее
+                    из множества слов</h4>
+                  <span class="subtitle">Артикул P-19195/00/50</span>
+                </div>
+                <div class="item_description">
+                  <div class="size">
+                    <span>Размер</span>
+                    <span>L</span>
+                  </div>
+                  <div class="color">
+                    <span>Цвет</span>
+                    <span></span>
+                  </div>
+                </div>
+                <div class="number">
+                  <p>К-во</p>
+                  <span class="minus">-</span>
+                  <input type="text" class="only_number" pattern="^[ 0-9]+$" value="1"
+                         size="1"/>
+                  <span class="plus">+</span>
+                </div>
+                <div class="price">
+                  <span>Стоимость</span>
+                  <span>2 500 RUB</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+
+        </div>
+        <!-- блок с расчетом цены -->
+        <div class="checkout__cost-calculation">
+          <div class="checkout__cost-calculation-wrapper">
+            <fieldset class="form__fieldset checkout__cost-calculation-block">
+              <legend class="form__legend checkout__title-cost-calculation">Расчет стоимости покупки</legend>
+              <label class="label label--column checkout__label">
+                <span class="label__name checkout__name checkout__cost-calculation-name">Использовать промо-код</span>
+                <input class="input checkout__input" type="text">
+              </label>
+              <label class="label label--column checkout__label">
+                <span class="label__name checkout__name checkout__cost-calculation-name">Использовать подарочный сертификат</span>
+                <input class="input checkout__input" type="text">
+              </label>
+            </fieldset>
+            <div class="checkout__cost-calculation-block">
+              <p class="checkout__cost-calculation-row">
+                <strong class="checkout__cost-calculation-field">Предварительная стоимость</strong>
+                <span class="checkout__cost-calculation-value"><b>2 500</b> RUB</span>
+              </p>
+              <p class="checkout__cost-calculation-row">
+                <strong class="checkout__cost-calculation-field">Фиксированная стоимость доставки</strong>
+                <span class="checkout__cost-calculation-value"><b>500</b> RUB</span>
+              </p>
+              <p class="checkout__cost-calculation-row">
+                <strong class="checkout__cost-calculation-field">НДС</strong>
+                <span class="checkout__cost-calculation-value"><b>20</b> RUB</span>
+              </p>
+              <p class="checkout__cost-calculation-row">
+                <strong class="checkout__cost-calculation-field">Экологический налог (-2.00)</strong>
+                <span class="checkout__cost-calculation-value"><b>2</b> RUB</span>
+              </p>
+            </div>
+            <p class="checkout__cost-calculation-row checkout__cost-calculation-total">
+              <b class="checkout__cost-calculation-result">Итого</b>
+              <span class="checkout__cost-calculation-number"><b>3 000</b> RUB</span>
+            </p>
+          </div>
+          <label class="label label--row checkout__checkbox-wrapper checkout__cost-calculation-checkbox">
+            <input class="checkbox" type="checkbox" required="">
+            <span class="checkout__checkbox-text">Мною прочитаны и я даю согласие с документом <a href="/" class="form__link">Условия соглашения</a></span>
+          </label>
+        </div>
+        <!-- /блок с расчетом цены -->
+      </div>
+
+      <p class="checkout__cost-calculation-bottom">
+        <label class="label label--column">
+          <span class="checkout__name checkout__name--comment label__name">Ваш комментарий к заказу  (по желанию)</span>
+          <textarea class="checkout__input checkout__textarea input" name="comment"></textarea>
+        </label>
+        <button type="submit" class="button button--pink button--middle checkout__button-confirm">Отправить</button>
+      </p>
+
+
+    </form>
+  </div>
+</section>
+
+
+<!-- build:section layout.footer-->
+<!-- /build -->
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jcf.min.js"></script>
+<script src="../js/jcf.scrollable.js"></script>
+<script src="../js/jcf.checkbox.min.js"></script>
+<script src="../js/script.min.js"></script>
+<script src="../js/checkout.min.js"></script>
+
+</body>
+
+</html>
